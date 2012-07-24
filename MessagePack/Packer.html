@@ -1,0 +1,1272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: MessagePack::Packer
+  
+    &mdash; Documentation by YARD 0.8.2.1
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../';
+  framesUrl = "../frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (P)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../MessagePack.html" title="MessagePack (module)">MessagePack</a></span></span>
+     &raquo; 
+    <span class="title">Packer</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: MessagePack::Packer
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">MessagePack::Packer</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">ext/msgpack/packer_class.c<span class="defines">,<br />
+  ext/msgpack/packer_class.c</span>
+</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>MessagePack::Packer is an interface to serialize objects into
+MessagePack::Buffer. It has an internal buffer which is an instance of the
+MessagePack::Buffer.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#buffer-instance_method" title="#buffer (instance method)">- (Object) <strong>buffer</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>call-seq:.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#clear-instance_method" title="#clear (instance method)">- (Object) <strong>clear</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>call-seq:.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#empty%3F-instance_method" title="#empty? (instance method)">- (Boolean) <strong>empty?</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>call-seq:.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#flush-instance_method" title="#flush (instance method)">- (Object) <strong>flush</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>call-seq:.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (Object) <strong>initialize</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>call-seq:.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#size-instance_method" title="#size (instance method)">- (Object) <strong>size</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>call-seq:.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#to_a-instance_method" title="#to_a (instance method)">- (Object) <strong>to_a</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>call-seq:.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#to_str-instance_method" title="#to_str (instance method)">- (Object) <strong>to_str</strong> </a>
+    
+
+    
+      (also: #to_s)
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>call-seq:.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#write-instance_method" title="#write (instance method)">- (Object) <strong>write</strong> </a>
+    
+
+    
+      (also: #pack)
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>call-seq:.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#write_array_header-instance_method" title="#write_array_header (instance method)">- (Object) <strong>write_array_header</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>call-seq:.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#write_map_header-instance_method" title="#write_map_header (instance method)">- (Object) <strong>write_map_header</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>call-seq:.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#write_nil-instance_method" title="#write_nil (instance method)">- (Object) <strong>write_nil</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>call-seq:.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#write_to-instance_method" title="#write_to (instance method)">- (Object) <strong>write_to</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>call-seq:.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    - (<tt>Object</tt>) <strong>initialize</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>call-seq:</p>
+
+<pre class="code"><code><span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+<span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_io'>io</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='op'>=</span><span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span></code></pre>
+
+<p>Creates an instance of the MessagePack::Packer.</p>
+
+<p>If the optional <em>io</em> argument is given, it writes serialzied objects
+into the IO when the internal buffer is filled. <em>io</em> must respond to
+_write(string)_ or _append(string)_ method.</p>
+
+<p>Currently, no options are supported.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/msgpack/packer_class.c', line 106</span>
+
+static VALUE Packer_initialize(int argc, VALUE* argv, VALUE self)
+{
+    if(argc == 0 || (argc == 1 &amp;&amp; argv[0] == Qnil)) {
+        return self;
+    }
+
+    VALUE io = Qnil;
+    VALUE options = Qnil;
+
+    if(argc == 1) {
+        VALUE v = argv[0];
+        if(rb_type(v) == T_HASH) {
+            options = v;
+        } else {
+            io = v;
+        }
+
+    } else if(argc == 2) {
+        io = argv[0];
+        options = argv[1];
+        if(rb_type(options) != T_HASH) {
+            rb_raise(rb_eArgError, &quot;expected Hash but found %s.&quot;, rb_obj_classname(io));
+        }
+
+    } else {
+        rb_raise(rb_eArgError, &quot;wrong number of arguments (%d for 0..1)&quot;, argc);
+    }
+
+    PACKER(self, pk);
+
+    // TODO options
+    // TODO reference threshold
+
+    if(io != Qnil) {
+        ID write_method = write_method_of(io);
+        msgpack_packer_set_io(pk, io, write_method);
+    }
+
+    return self;
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="buffer-instance_method">
+  
+    - (<tt>Object</tt>) <strong>buffer</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>call-seq:</p>
+
+<pre class="code"><code>buffer -&gt; #&lt;MessagePack::Buffer&gt;</code></pre>
+
+<p>Returns internal buffer.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+156
+157
+158
+159
+160</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/msgpack/packer_class.c', line 156</span>
+
+static VALUE Packer_buffer(VALUE self)
+{
+    PACKER(self, pk);
+    return pk-&gt;buffer_ref;
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="clear-instance_method">
+  
+    - (<tt>Object</tt>) <strong>clear</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>call-seq:</p>
+
+<pre class="code"><code><span class='id identifier rubyid_clear'>clear</span></code></pre>
+
+<p>Makes the internal buffer empty. Same as <em>buffer.clear</em>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+265
+266
+267
+268
+269
+270</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/msgpack/packer_class.c', line 265</span>
+
+static VALUE Packer_clear(VALUE self)
+{
+    PACKER(self, pk);
+    msgpack_buffer_clear(PACKER_BUFFER_(pk));
+    return Qnil;
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="empty?-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>empty?</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>call-seq:</p>
+
+<pre class="code"><code>empty? -&gt; bool</code></pre>
+
+<p>Returns <em>true</em> if the internal buffer is empty. Same as
+<em>buffer.empty?</em>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+297
+298
+299
+300
+301
+302
+303
+304
+305</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/msgpack/packer_class.c', line 297</span>
+
+static VALUE Packer_empty_p(VALUE self)
+{
+    PACKER(self, pk);
+    if(msgpack_buffer_top_readable_size(PACKER_BUFFER_(pk)) == 0) {
+        return Qtrue;
+    } else {
+        return Qfalse;
+    }
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="flush-instance_method">
+  
+    - (<tt>Object</tt>) <strong>flush</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>call-seq:</p>
+
+<pre class="code"><code>flush -&gt; self</code></pre>
+
+<p>Flushes data in the internal buffer to the internal IO.</p>
+
+<p>If internal IO is not set, it doesn nothing.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/msgpack/packer_class.c', line 245</span>
+
+static VALUE Packer_flush(VALUE self)
+{
+    PACKER(self, pk);
+
+    if(pk-&gt;io != Qnil) {
+        msgpack_buffer_flush_to_io(PACKER_BUFFER_(pk), pk-&gt;io, pk-&gt;io_write_all_method);
+    }
+
+    return self;
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="size-instance_method">
+  
+    - (<tt>Object</tt>) <strong>size</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>call-seq:</p>
+
+<pre class="code"><code>size -&gt; integer</code></pre>
+
+<p>Returns size of the internal buffer. Same as <em>buffer.size</em>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+281
+282
+283
+284
+285
+286</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/msgpack/packer_class.c', line 281</span>
+
+static VALUE Packer_size(VALUE self)
+{
+    PACKER(self, pk);
+    size_t size = msgpack_buffer_all_readable_size(PACKER_BUFFER_(pk));
+    return SIZET2NUM(size);
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="to_a-instance_method">
+  
+    - (<tt>Object</tt>) <strong>to_a</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>call-seq:</p>
+
+<pre class="code"><code>to_a -&gt; array_of_strings</code></pre>
+
+<p>Returns content of the internal buffer as an array of strings. Same as
+<em>buffer.to_a</em>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+331
+332
+333
+334
+335</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/msgpack/packer_class.c', line 331</span>
+
+static VALUE Packer_to_a(VALUE self)
+{
+    PACKER(self, pk);
+    return msgpack_buffer_all_as_string_array(PACKER_BUFFER_(pk));
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="to_str-instance_method">
+  
+    - (<tt>Object</tt>) <strong>to_str</strong> 
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='to_s-instance_method'>to_s</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>call-seq:</p>
+
+<pre class="code"><code>to_str -&gt; string</code></pre>
+
+<p>Returns all data in the buffer as a string. Same as <em>buffer.to_str</em>.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+316
+317
+318
+319
+320</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/msgpack/packer_class.c', line 316</span>
+
+static VALUE Packer_to_str(VALUE self)
+{
+    PACKER(self, pk);
+    return msgpack_buffer_all_as_string(PACKER_BUFFER_(pk));
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="write-instance_method">
+  
+    - (<tt>Object</tt>) <strong>write</strong> 
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='pack-instance_method'>pack</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>call-seq:</p>
+
+<pre class="code"><code>write(obj) -&gt; self
+pack(obj) -&gt; self</code></pre>
+
+<p>Serializes the given object to the internal buffer.</p>
+
+<p>If it could not serialize the object, it raises NoMethodError: undefined
+method `to_msgpack' for #&lt;the_object&gt;.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+175
+176
+177
+178
+179
+180</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/msgpack/packer_class.c', line 175</span>
+
+static VALUE Packer_write(VALUE self, VALUE v)
+{
+    PACKER(self, pk);
+    msgpack_packer_write_value(pk, v);
+    return self;
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="write_array_header-instance_method">
+  
+    - (<tt>Object</tt>) <strong>write_array_header</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>call-seq:</p>
+
+<pre class="code"><code>write_array_header(n) -&gt; self</code></pre>
+
+<p>Write a header of an array whose size is <em>n</em>.</p>
+
+<p>For example, _write_array_header(1).write(true)_ is same as _write([ true
+])_.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+209
+210
+211
+212
+213
+214</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/msgpack/packer_class.c', line 209</span>
+
+static VALUE Packer_write_array_header(VALUE self, VALUE n)
+{
+    PACKER(self, pk);
+    msgpack_packer_write_array_header(pk, NUM2UINT(n));
+    return self;
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="write_map_header-instance_method">
+  
+    - (<tt>Object</tt>) <strong>write_map_header</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>call-seq:</p>
+
+<pre class="code"><code>write_map_header(n) -&gt; self</code></pre>
+
+<p>Write a header of a map whose size is <em>n</em>.</p>
+
+<p>For example, _write_map_header(1).write('key').write(true)_ is same as
+_write('key'=&gt;true)_.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+227
+228
+229
+230
+231
+232</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/msgpack/packer_class.c', line 227</span>
+
+static VALUE Packer_write_map_header(VALUE self, VALUE n)
+{
+    PACKER(self, pk);
+    msgpack_packer_write_map_header(pk, NUM2UINT(n));
+    return self;
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="write_nil-instance_method">
+  
+    - (<tt>Object</tt>) <strong>write_nil</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>call-seq:</p>
+
+<pre class="code"><code>write_nil -&gt; self</code></pre>
+
+<p>Same as _write(nil)_.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+191
+192
+193
+194
+195
+196</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/msgpack/packer_class.c', line 191</span>
+
+static VALUE Packer_write_nil(VALUE self)
+{
+    PACKER(self, pk);
+    msgpack_packer_write_nil(pk);
+    return self;
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="write_to-instance_method">
+  
+    - (<tt>Object</tt>) <strong>write_to</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>call-seq:</p>
+
+<pre class="code"><code><span class='id identifier rubyid_write_to'>write_to</span><span class='lparen'>(</span><span class='id identifier rubyid_io'>io</span><span class='rparen'>)</span></code></pre>
+
+<p>Writes all of data in the internal buffer into the given IO. Same as
+_buffer.write_to(io)_.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+346
+347
+348
+349
+350
+351
+352
+353
+354
+355
+356
+357
+358
+359</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'ext/msgpack/packer_class.c', line 346</span>
+
+static VALUE Packer_write_to(VALUE self, VALUE io)
+{
+    PACKER(self, pk);
+    VALUE ary = msgpack_buffer_all_as_string_array(PACKER_BUFFER_(pk));
+
+    unsigned int len = (unsigned int)RARRAY_LEN(ary);
+    unsigned int i;
+    for(i=0; i &lt; len; ++i) {
+        VALUE e = rb_ary_entry(ary, i);
+        rb_funcall(io, s_write, 1, e);
+    }
+
+    return Qnil;
+}</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Mon Jul 23 23:30:03 2012 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.2.1 (ruby-1.9.3).
+</div>
+
+  </body>
+</html>
